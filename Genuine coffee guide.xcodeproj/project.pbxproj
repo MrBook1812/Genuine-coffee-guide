@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		CF3DBB4229D404C100FA0E7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DBB4129D404C100FA0E7F /* AppDelegate.swift */; };
 		CF3DBB4429D404C100FA0E7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DBB4329D404C100FA0E7F /* SceneDelegate.swift */; };
-		CF3DBB4629D404C100FA0E7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DBB4529D404C100FA0E7F /* ViewController.swift */; };
+		CF3DBB4629D404C100FA0E7F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DBB4529D404C100FA0E7F /* DetailsViewController.swift */; };
 		CF3DBB4929D404C100FA0E7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3DBB4729D404C100FA0E7F /* Main.storyboard */; };
 		CF3DBB4B29D404C300FA0E7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF3DBB4A29D404C300FA0E7F /* Assets.xcassets */; };
 		CF3DBB4E29D404C300FA0E7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3DBB4C29D404C300FA0E7F /* LaunchScreen.storyboard */; };
+		CF3DBB5B29D40BFB00FA0E7F /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DBB5A29D40BFB00FA0E7F /* Coffee.swift */; };
+		CF3DBB5D29D4337E00FA0E7F /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DBB5C29D4337E00FA0E7F /* DataStore.swift */; };
+		CF3DBB6229D490CE00FA0E7F /* CoffeeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DBB6129D490CE00FA0E7F /* CoffeeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CF3DBB3E29D404C100FA0E7F /* Genuine coffee guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Genuine coffee guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3DBB4129D404C100FA0E7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF3DBB4329D404C100FA0E7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CF3DBB4529D404C100FA0E7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF3DBB4529D404C100FA0E7F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		CF3DBB4829D404C100FA0E7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF3DBB4A29D404C300FA0E7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF3DBB4D29D404C300FA0E7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF3DBB4F29D404C300FA0E7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF3DBB5A29D40BFB00FA0E7F /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		CF3DBB5C29D4337E00FA0E7F /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		CF3DBB6129D490CE00FA0E7F /* CoffeeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,66 @@
 		CF3DBB4029D404C100FA0E7F /* Genuine coffee guide */ = {
 			isa = PBXGroup;
 			children = (
-				CF3DBB4129D404C100FA0E7F /* AppDelegate.swift */,
-				CF3DBB4329D404C100FA0E7F /* SceneDelegate.swift */,
-				CF3DBB4529D404C100FA0E7F /* ViewController.swift */,
-				CF3DBB4729D404C100FA0E7F /* Main.storyboard */,
-				CF3DBB4A29D404C300FA0E7F /* Assets.xcassets */,
-				CF3DBB4C29D404C300FA0E7F /* LaunchScreen.storyboard */,
-				CF3DBB4F29D404C300FA0E7F /* Info.plist */,
+				CF3DBB6029D441CE00FA0E7F /* Resources */,
+				CF3DBB5729D4050D00FA0E7F /* Services */,
+				CF3DBB5629D4050B00FA0E7F /* ViewControllers */,
+				CF3DBB5929D4054C00FA0E7F /* Storyboards */,
+				CF3DBB5829D4051000FA0E7F /* App */,
+				CF3DBB5529D4050500FA0E7F /* Model */,
 			);
 			path = "Genuine coffee guide";
+			sourceTree = "<group>";
+		};
+		CF3DBB5529D4050500FA0E7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF3DBB5A29D40BFB00FA0E7F /* Coffee.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF3DBB5629D4050B00FA0E7F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF3DBB4529D404C100FA0E7F /* DetailsViewController.swift */,
+				CF3DBB6129D490CE00FA0E7F /* CoffeeTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CF3DBB5729D4050D00FA0E7F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CF3DBB5C29D4337E00FA0E7F /* DataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CF3DBB5829D4051000FA0E7F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CF3DBB4129D404C100FA0E7F /* AppDelegate.swift */,
+				CF3DBB4329D404C100FA0E7F /* SceneDelegate.swift */,
+				CF3DBB4F29D404C300FA0E7F /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CF3DBB5929D4054C00FA0E7F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CF3DBB4C29D404C300FA0E7F /* LaunchScreen.storyboard */,
+				CF3DBB4729D404C100FA0E7F /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CF3DBB6029D441CE00FA0E7F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF3DBB4A29D404C300FA0E7F /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF3DBB4629D404C100FA0E7F /* ViewController.swift in Sources */,
+				CF3DBB4629D404C100FA0E7F /* DetailsViewController.swift in Sources */,
+				CF3DBB5B29D40BFB00FA0E7F /* Coffee.swift in Sources */,
 				CF3DBB4229D404C100FA0E7F /* AppDelegate.swift in Sources */,
+				CF3DBB6229D490CE00FA0E7F /* CoffeeTableViewController.swift in Sources */,
+				CF3DBB5D29D4337E00FA0E7F /* DataStore.swift in Sources */,
 				CF3DBB4429D404C100FA0E7F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,12 +349,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TN6W662TZ9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Genuine coffee guide/Info.plist";
+				INFOPLIST_FILE = "Genuine coffee guide/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,6 +363,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Kirill-Kniga.Genuine-coffee-guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,12 +381,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TN6W662TZ9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Genuine coffee guide/Info.plist";
+				INFOPLIST_FILE = "Genuine coffee guide/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,6 +395,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Kirill-Kniga.Genuine-coffee-guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
