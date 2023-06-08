@@ -13,7 +13,8 @@ final class CoffeeTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(ciColor: .gray)
+        view.backgroundColor = pumiceColor
+        tableView.backgroundColor = pumiceColor
     }
 
     // MARK: - Table view data source
@@ -30,6 +31,8 @@ final class CoffeeTableViewController: UITableViewController {
         
         content.text = drink.name
         cell.contentConfiguration = content
+        cell.backgroundColor = pumiceColor
+        navigationItem.title = "Кофейные напитки"
         return cell
     }
 

@@ -14,8 +14,11 @@
 		CF3DBB4B29D404C300FA0E7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF3DBB4A29D404C300FA0E7F /* Assets.xcassets */; };
 		CF3DBB4E29D404C300FA0E7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3DBB4C29D404C300FA0E7F /* LaunchScreen.storyboard */; };
 		CF3DBB5B29D40BFB00FA0E7F /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DBB5A29D40BFB00FA0E7F /* Coffee.swift */; };
-		CF3DBB5D29D4337E00FA0E7F /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DBB5C29D4337E00FA0E7F /* DataStore.swift */; };
+		CF3DBB5D29D4337E00FA0E7F /* CoffeeDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DBB5C29D4337E00FA0E7F /* CoffeeDataStore.swift */; };
 		CF3DBB6229D490CE00FA0E7F /* CoffeeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DBB6129D490CE00FA0E7F /* CoffeeTableViewController.swift */; };
+		CFCCBAA029D7073F00D2A7FC /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCBA9F29D7073F00D2A7FC /* MainTableViewController.swift */; };
+		CFCCBAA229D7078900D2A7FC /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCBAA129D7078900D2A7FC /* MainMenu.swift */; };
+		CFFB8F712A2E14D000717033 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB8F702A2E14D000717033 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +31,11 @@
 		CF3DBB4D29D404C300FA0E7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF3DBB4F29D404C300FA0E7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF3DBB5A29D40BFB00FA0E7F /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
-		CF3DBB5C29D4337E00FA0E7F /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		CF3DBB5C29D4337E00FA0E7F /* CoffeeDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDataStore.swift; sourceTree = "<group>"; };
 		CF3DBB6129D490CE00FA0E7F /* CoffeeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeTableViewController.swift; sourceTree = "<group>"; };
+		CFCCBA9F29D7073F00D2A7FC /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		CFCCBAA129D7078900D2A7FC /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		CFFB8F702A2E14D000717033 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				CF3DBB5A29D40BFB00FA0E7F /* Coffee.swift */,
+				CFCCBAA129D7078900D2A7FC /* MainMenu.swift */,
+				CFFB8F702A2E14D000717033 /* Colors.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -83,8 +91,9 @@
 		CF3DBB5629D4050B00FA0E7F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CF3DBB4529D404C100FA0E7F /* DetailsViewController.swift */,
+				CFCCBA9F29D7073F00D2A7FC /* MainTableViewController.swift */,
 				CF3DBB6129D490CE00FA0E7F /* CoffeeTableViewController.swift */,
+				CF3DBB4529D404C100FA0E7F /* DetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -92,7 +101,7 @@
 		CF3DBB5729D4050D00FA0E7F /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				CF3DBB5C29D4337E00FA0E7F /* DataStore.swift */,
+				CF3DBB5C29D4337E00FA0E7F /* CoffeeDataStore.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -196,11 +205,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF3DBB4629D404C100FA0E7F /* DetailsViewController.swift in Sources */,
+				CFFB8F712A2E14D000717033 /* Colors.swift in Sources */,
 				CF3DBB5B29D40BFB00FA0E7F /* Coffee.swift in Sources */,
 				CF3DBB4229D404C100FA0E7F /* AppDelegate.swift in Sources */,
+				CFCCBAA229D7078900D2A7FC /* MainMenu.swift in Sources */,
 				CF3DBB6229D490CE00FA0E7F /* CoffeeTableViewController.swift in Sources */,
-				CF3DBB5D29D4337E00FA0E7F /* DataStore.swift in Sources */,
+				CF3DBB5D29D4337E00FA0E7F /* CoffeeDataStore.swift in Sources */,
 				CF3DBB4429D404C100FA0E7F /* SceneDelegate.swift in Sources */,
+				CFCCBAA029D7073F00D2A7FC /* MainTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +368,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,6 +401,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

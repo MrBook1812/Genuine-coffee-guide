@@ -19,6 +19,8 @@ class DetailsViewController: UIViewController {
         super.viewDidLoad()
         imageView.image = drinks.coffeeImage
         label.text = drinks.description
+        
+        view.backgroundColor = pumiceColor
     }
 
 

@@ -5,11 +5,10 @@
 //  Created by Kirill Kniga on 29.03.2023.
 //
 
-import Foundation
 import UIKit
 
-final class DataStore {
-    static let shared = DataStore()
+final class CoffeeDataStore {
+    static let shared = CoffeeDataStore()
     
     let espresso = "Эспрессо"
     let doubleEspresso = "Двойной эспрессо"
@@ -18,6 +17,15 @@ final class DataStore {
     let milk = "Молоко"
     let cream = "Сливки"
     let ice = "Лёд"
+    
+    private init() {}
+}
+
+final class MainMenuDataStore {
+    static let shared = MainMenuDataStore()
+    
+    let coffeeDrinks = "Кофейные напитки"
+    let tests = "Тесты"
     
     private init() {}
 }
